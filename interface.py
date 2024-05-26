@@ -99,15 +99,6 @@ def analise_geral(df_litros, df_dolares):
     exp_por_pais_dolares.columns = ['País', 'Total Dólares']
     st.dataframe(exp_por_pais_dolares.style.format({'Total Dólares': '${:,.0f}'.format}))
 
-    st.header('Sugestões para Melhoria das Exportações de Vinho')
-    st.write("""
-    1. **Diversificação de Mercados**: Identificar e investir em mercados emergentes que possuem potencial de crescimento no consumo de vinhos.
-    2. **Marketing e Branding**: Aumentar os esforços de marketing internacional para promover a marca dos vinhos brasileiros.
-    3. **Qualidade e Inovação**: Investir na qualidade dos vinhos e na inovação dos processos de produção para atender às exigências dos mercados internacionais.
-    4. **Parcerias e Acordos Comerciais**: Estabelecer parcerias e acordos comerciais que facilitem o acesso a novos mercados e reduzam as barreiras tarifárias.
-    5. **Sustentabilidade**: Implementar práticas sustentáveis na produção de vinhos, que são valorizadas pelos consumidores globais.
-    """)
-
 def analise_por_pais(df_litros, df_dolares):
     st.title('Análise de Exportação por País')
 
